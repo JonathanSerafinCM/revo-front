@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Revolucionarios</title>
+    <link rel="icon" href="./src/img/Logo.jpg">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nanum+Myeongjo:wght@400;700;800&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./src/scripts.js"></script>
+</head>
+<body class="overview">
+    <!--Heade0r-->
+    <header class="header no-margin no-padding">
+        <div class="header-img">
+            <img src="./src/img/Logo.jpg" alt="Logotipo">
+        </div>
+        <div class="header-txt">
+            <h1>
+                LOS REVOLUCIONARIOS
+            </h1>
+            <p>
+                Sazón con nostalgia, escencia familiar y tradición sin fin.
+            </p>
+        </div>
+    </header>
+    <!--Fin Header-->
+
+    <!--Contenedor Principal-->
+    <div class="contenedor-principal">
+        <!-- Carrusel Principal-->
+        <div class="contenedor-secundario">
+            <div class="slider-frame">
+                <div class="slide">
+                    <img src="./src/img/Prueba(1).jpg" alt="Imagen de Prueba">
+                </div>
+                <div class="slide">
+                    <img src="./src/img/Prueba(2).jpg" alt="Imagen de Pureba">
+                </div>
+                <div class="slide">
+                    <img src="./src/img/Prueba(3).jpg" alt="Imagen de Prueba">
+                </div>
+            </div><!--Fin slider-frame-->
+        </div><!--Fin de contenedor secundario-->
+        <!--Barra de Busqueda-->
+        <div class="busqueda">
+            <img src="./src/img/lupa.png" alt="lupa">
+            <form>
+                <input type="text" placeholder="Pizza Revolucionaria" class="input-busqueda">
+            </form>
+        </div>
+        <!--Fin Barra de Busqueda-->
+    </div>
+    <!--Fin Contenedor Principal-->
+
+    <!--Contenedor Barra de Opciones-->
+    <div class="slider-barra">
+        <!--Opciones Menu-->
+        <div class="tarjeta-slider">
+            <!--Primer Opion-->
+            <div id="Opcion-1" class="menu-1">
+                <div class="opcion-menu" onclick='Taco()'>
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-taco-100.png" alt="taco">
+                    </div>
+                    <p>Tacos</p>
+                </div>
+                <div class="opcion-menu" onclick='Especial()'>
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-comida-100 (1).png" alt="especialidad" id="esp">
+                    </div>
+                    <p id="esp">Especialidades</p>
+                </div>
+                <div class="opcion-menu" onclick='Parrilla()'>
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-filete-muy-caliente-100.png">
+                    </div>
+                    <p>A la parrilla</p>
+                </div>
+                <div class="opcion-menu" onclick='Marisco()'>
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-comida-100.png">
+                    </div>
+                    <p>Mariscos</p>
+                </div>
+            </div>
+            <!--Fin Primer Opcion-->
+            <!--Segunda Opcion-->
+            <div id="Opcion-2" class="menu-1">
+                <div class="opcion-menu" onclick='XXXX1()'>
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-taco-100.png" alt="taco">
+                    </div>
+                    <p>XXXXX</p>
+                </div>
+                <div class="opcion-menu" onclick="XXXX2()">
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-comida-100 (1).png" alt="especialidad">
+                    </div>
+                    <p>XXXXX</p>
+                </div>
+                <div class="opcion-menu" onclick="XXXX3()">
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-filete-muy-caliente-100.png">
+                    </div>
+                    <p>XXXXX</p>
+                </div>
+                <div class="opcion-menu" onclick="XXXX4()">
+                    <div class="opcion-menu__img">
+                        <img src="./src/img/icons8-comida-100.png">
+                    </div>
+                    <p>XXXXX</p>
+                </div>
+
+                <!--Flechas-->
+                <div class="flechas-slider">
+                    <a href="#Opcion-1">
+                        <img src="./src/img/icons8-flecha-izq.png">
+                    </a>
+                    <a href="#Opcion-2">
+                        <img src="./src/img/icons8-flecha-der.png">
+                    </a>
+                </div>
+                <!--Fin flechas-->
+            </div>
+            <!--Fin Segunda Opcion-->
+        </div>
+        <!--Fin Opciones Menu-->
+
+
+    </div>
+    <!--Fin Barra Opciones-->
+
+    <!--Contenedor Carrusel de Especialidades-->
+    <div class="contenedor-especialidades">
+        <div class="contenedor-especialidades__texto">
+            <h2>
+                Favoritos
+            </h2>
+            <img src="./src/img/icons8-fuego-100.png">
+        </div>
+        <div class="contenedor-especialidades__carrusel">
+            <div class="contenedor-especialidades__carrusel--rojo">
+                <!--Primer Especialidad-->
+                <div class="movil" id="1">
+                    <h3>El Revolucionario</h3>
+                    <div class="movil__imagen-1">
+                        <!--Imagen aplicada con css-->
+                    </div>
+                    <div class="movil__texto">
+                        <h3>$115</h3>
+                    </div>
+                    <!--Flechas-->
+                    <div class="flechas-slider">
+                        <a href="#3">
+                            <img src="./src/img/icons8-flecha-izq.png">
+                        </a>
+                        <a href="#2">
+                            <img src="./src/img/icons8-flecha-der.png">
+                        </a>
+                    </div>
+                    <!--Fin Flechas-->
+                </div>
+                <!--Fin Primera Especialidad-->
+
+                <!--Segunda Especialidad-->
+                <div class="movil" id="2">
+                    <h3>Segunda Especialidad</h3>
+                    <div class="movil__imagen-1">
+                        <!--Imagen aplicada con css-->
+                    </div>
+                    <div class="movil__texto">
+                        <h3>$115</h3>
+                    </div>
+                    <!--Flechas-->
+                    <div class="flechas-slider">
+                        <a href="#1">
+                            <img src="./src/img/icons8-flecha-izq.png">
+                        </a>
+                        <a href="#3">
+                            <img src="./src/img/icons8-flecha-der.png">
+                        </a>
+                    </div>
+                    <!--Fin Flechas-->
+                </div>
+                <!--Fin Segunda Especialidad-->
+
+                <!--Tercer Especialidad-->
+                <div class="movil" id="3">
+                    <h3>Tercer Especialidad</h3>
+                    <div class="movil__imagen-1">
+                        <!--Imagen aplicada con css-->
+                    </div>
+                    <div class="movil__texto">
+                        <h3>$115</h3>
+                    </div>
+                    <!--Flechas-->
+                    <div class="flechas-slider">
+                        <a href="#2">
+                            <img src="./src/img/icons8-flecha-izq.png">
+                        </a>
+                        <a href="#1">
+                            <img src="./src/img/icons8-flecha-der.png">
+                        </a>
+                    </div>
+                    <!--Fin Flechas-->
+                </div>
+                <!--Fin Tercer Especialidad-->
+                <div class="movil">
+                    <h3>Tercer Especialidad</h3>
+                    <div class="movil__imagen-1">
+                        <!--Imagen aplicada con css-->
+                    </div>
+                    <div class="movil__texto">
+                        <h3>$115</h3>
+                    </div>
+                    <!--Flechas-->
+                    <div class="flechas-slider">
+                        <a href="#2">
+                            <img src="./src/img/icons8-flecha-izq.png">
+                        </a>
+                        <a href="#1">
+                            <img src="./src/img/icons8-flecha-der.png">
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Fin Carrusel Especialidades-->
+
+    <!--Contenedor Menu-->
+    <div class="contenedor-menu">
+        <div class="contenedor-menu__texto">
+            <h3 id="opMenu">
+                Tacos
+            </h3>
+            <img src="./src/img/icons8-taco-100.png" alt="imagen_menu" id='imgMenu'/>
+        </div>
+        <div class="contenedor-menu__platillos" id="contMenu">
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/dorados.jpg" alt="platilo-1"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Tacos Dorados</h3>
+                    <h3>$115</h3>
+                    
+                </div>
+                <div id="infoPlatillo" >
+                    <button class="close-button" onclick="cerrar()">X</button>
+                    <img id="imagenPlatillo" src="" alt="Imagen del platillo">
+                    <div class="cb">
+                    <h2 id="nombrePlatillo"></h2>
+                    <h3 id="precioPlatillo"></h3>
+                </div>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Patorazos</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Enchiladas</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Tamales</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Tamales</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Tamales</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Tamales</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Tamales</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+            <div class="contenedor-menu__platillos-item">
+                <img src="./src/img/pastor.jpg" alt="platilo-2"/>
+                <div class="contenedor-menu__platillos-item-txt">
+                    <h3>Tamales</h3>
+                    <h3>$115</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Fin Menu-->
+
+    <!--Footer-->
+    <section>
+        <footer class="footer">
+            <div class="footer__horarios">
+                <div class="footer__horarios-titulo">
+                    <h2 class="no-padding no-margin">Visitanos</h2>
+                    <img src="./src/img/icons8-map-pin-100.png" alt="pin-mapa">
+                </div>
+                <div class="footer__horarios-estampado">
+                    <div class="footer__horarios-estampado-aux">
+                        <p>Lunes a Jueves de 13:00 a 00:00</p>
+                        <p>Viernes y Sabado de 13:00 a 2:00</p>
+                        <p>Domigno de 13:00 a 22:00</p>
+                    </div>
+                </div>
+                <div class="footer__horarios-direccion">
+                    <p>
+                        Av.Torreon Nuevo #519, Vicente Riva Palacio, 58116.
+                    </p>
+                    <p>
+                        Morelia, Michoacán
+                    </p>
+                </div>
+            </div>
+            <div class="footer__mapa">
+                
+                <div class="footer__mapa-contacto">
+                    <h3>Contactanos</h3>
+                    <div class="footer__mapa-img">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.592510778326!2d-101.20164822501775!3d19.7299654816139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e50f1a29e01%3A0x4bbe2b4ae19dee80!2sLos%20Revolucionarios!5e0!3m2!1ses-419!2smx!4v1715660065170!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="footer__mapa-contacto-div">
+                        <div class="aux">
+                            <img src="./src/img/whatsapp.png" alt="WhatssApp">
+                            <p>+52 4437716789</p>
+                        </div>
+                        <div class="aux">
+                            <img src="./src/img/facebook.png" alt="WhatssApp">
+                            <p>Los Revolucionarios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!--Fin Footer-->
+
+    <!--Navegador-->
+    <nav class="nav">
+        <a class="nav__enlace" href="./index.html">
+                <div class="nav__enlace-img">
+                    <img src="./src/img/icons8-menú-de-restaurante-100.png" alt="menu">
+                </div>
+                <p>Menú</p>
+        </a>
+        <a class="nav__enlace" href="./about-us.html">
+                <div class="nav__enlace-img">
+                    <img src="./src/img/icons8-stylish-sombrero-hat-with-vintage-looks-isolated-on-a-white-background-100.png" alt="mas-info">
+                </div>
+                <p>Revolucionarios</p>
+        </a>
+    </nav>
+    <!--Fin Navegador-->
+    
+</body>
+</html>
