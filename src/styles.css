@@ -505,16 +505,16 @@ img{
     width: 20rem;
     padding: 0;
     margin: 0;
-    background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/final__37_.png);
+    background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/IMG_0836.jpg?t=2024-05-27T22%3A23%3A01.502Z);
     background-size: cover;
     background-repeat: no-repeat;
 }
-Descomenten esto para cambiar las imagenes del segundo carrusel
+
 .movil__imagen-2{
     border-radius: 50%;
     height: 20rem;
     width: 20rem;
-    background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/final__11_.png);
+    background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/IMG_0860_EDIT_.jpg?t=2024-05-27T22%3A21%3A29.993Z);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -522,7 +522,7 @@ Descomenten esto para cambiar las imagenes del segundo carrusel
     border-radius: 50%;
     height: 20rem;
     width: 20rem;
-    background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/final__42_.png);
+    background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/IMG_0851_EDIT_.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -591,7 +591,27 @@ Descomenten esto para cambiar las imagenes del segundo carrusel
         width: 76rem;
         padding: 0;
         margin: 0;
-        background-image: url(./img/platillo_prueba.jpg);
+        background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/IMG_0836.jpg?t=2024-05-27T22%3A23%3A01.502Z);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .movil__imagen-2{
+        border-radius: 50%;
+        height: 76rem;
+        width: 76rem;
+        padding: 0;
+        margin: 0;
+        background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/IMG_0860_EDIT_.jpg?t=2024-05-27T22%3A21%3A29.993Z);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .movil__imagen-3{
+        border-radius: 50%;
+        height: 76rem;
+        width: 76rem;
+        padding: 0;
+        margin: 0;
+        background-image: url(https://qxtumkmhykeajygikdhy.supabase.co/storage/v1/object/public/img/IMG_0851_EDIT_.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
