@@ -187,6 +187,18 @@ function Parrilla(){
 function Marisco(){
   generarPlatillos('Marisco', 'Mariscos', './src/img/icons8-comida-100.png');
 }
+function Sandwich(){
+  generarPlatillos('Sandwich', 'Sandwiches', './src/img/sandwich.png');
+}
+function Ensalada(){
+  generarPlatillos('Ensalada', 'Ensaladas', './src/img/ensalada1.png');
+}
+function Coctel(){
+  generarPlatillos('Coctel', 'Cocteles', './src/img/ensalada1.png');
+}
+function Botana(){
+  generarPlatillos('Botana', 'Botanas', './src/img/Botanas.png');
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     setFondo();
     generarCarrusel();

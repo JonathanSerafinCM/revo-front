@@ -1,5 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/script.js", "destination": "/script.js" }
-    ]
-  }
