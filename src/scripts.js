@@ -218,24 +218,24 @@ searchBar.addEventListener('keyup', (e) => {
       // Filtra los platillos basándose en el valor de la búsqueda
       const filteredPlatillos = data.filter(platillo => platillo.nombre.toLowerCase().includes(searchString));
 
-      // Limpia el contenedor de platillos
-      document.getElementById('contMenu').innerHTML = '';
+     // Limpia el contenedor de platillos
+document.getElementById('contMenu').innerHTML = '';
 
-      // Genera los platillos filtrados
-      filteredPlatillos.forEach(platillo => {
-        fetch(`https://revolucionarios-backend.vercel.app/${platillo.id_imagen}`)
-          .then(response => response.json())
-          .then(imagen => {
-            const html = `<div class='contenedor-menu__platillos-item'>
-                            <img src='${imagen.url}' alt='platilo-${platillo.id}'/>
-                            <div class='contenedor-menu__platillos-item-txt'>
-                              <h3>${platillo.nombre}</h3>
-                              <h3>$${platillo.Precio}</h3>
-                            </div>
-                          </div>`;
-            document.getElementById('contMenu').innerHTML += html;
-          })
-      });
+// Genera los platillos filtrados
+filteredPlatillos.forEach(platillo => {
+  fetch(`https://revolucionarios-backend.vercel.app/imagen/${platillo.id_imagen}`)
+    .then(response => response.json())
+    .then(imagen => {
+      const html = `<div class='contenedor-menu__platillos-item'>
+                      <img src='${imagen.url}' alt='platilo-${platillo.id}'/>
+                      <div class='contenedor-menu__platillos-item-txt'>
+                        <h3>${platillo.nombre}</h3>
+                        <h3>$${platillo.Precio}</h3>
+                      </div>
+                    </div>`;
+      document.getElementById('contMenu').innerHTML += html;
+    })
+});
     });
 });
 });

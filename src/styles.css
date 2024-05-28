@@ -694,8 +694,9 @@ img{
 
 #imagenPlatillo{
     border-radius: 100%;
-    width: 90%; 
-   
+    width: 90%;
+    height: 90%; 
+   object-fit: cover;
 }
 .cb{
     background-color: #fff;
@@ -797,6 +798,7 @@ img{
         margin-top: 5px;
         font-size: 5rem;
     }
+    
 }
 /*Fin Contenedor Menu*/
 
