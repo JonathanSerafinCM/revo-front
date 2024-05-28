@@ -234,6 +234,7 @@ filteredPlatillos.forEach(platillo => {
                       </div>
                     </div>`;
       document.getElementById('contMenu').innerHTML += html;
+      plato();
     })
 });
     });
