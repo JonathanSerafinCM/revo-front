@@ -8,9 +8,9 @@ function plato() {
       
       var infoPlatillo = document.getElementById('infoPlatillo');
       
-      // Check if infoPlatillo exists
+      // Ver si infoPlatilllo existe
       if (!infoPlatillo) {
-        // Create infoPlatillo div if it doesn't exist
+        // Crear infoPlatillo si no existe
         infoPlatillo = document.createElement('div');
         infoPlatillo.id = 'infoPlatillo';
 
@@ -57,18 +57,17 @@ if (!cbDiv) {
   // Si cbDiv ya existe, limpiar su contenido
 }
 
-// Resto del código...
-      infoPlatillo.appendChild(cbDiv); // Append cbDiv to infoPlatillo
+      infoPlatillo.appendChild(cbDiv); // Append cbDiv a infoPlatillo
       fetch(`https://revolucionarios-backend.vercel.app/descripcion/${nombre}`)
   .then(response => response.json())
   .then(data => {
-    // Check if the description element already exists
+    // Revisa si la descripcion ya existe
     var descripcionPlatillo = document.getElementById('descripcionPlatillo');
     if (descripcionPlatillo) {
-      // If it exists, just update its content
+      // Si existe, actualiza su contenido
       descripcionPlatillo.textContent = data.descripcion;
     } else {
-      // If it doesn't exist, create it and append it to cbDiv
+      // Si no existe, crea un nuevo elemento y lo añade a cbDiv
       descripcionPlatillo = document.createElement('p');
       descripcionPlatillo.id = 'descripcionPlatillo';
       descripcionPlatillo.textContent = data.descripcion;
@@ -86,7 +85,7 @@ function cerrar() {
     infoPlatillo.classList.add('hide');
     infoPlatillo.addEventListener('animationend', function() {
       if (infoPlatillo.classList.contains('hide')) {
-        this.style.display = 'none';  // <-- Error occurs here
+        this.style.display = 'none';  // Ocultar el platillo después de la animación
         infoPlatillo.classList.remove('hide');
       }
     });
@@ -102,7 +101,7 @@ async function generarCarrusel() {
         }
         const data = await response.json();
         const sliderFrame = document.querySelector('.slider-frame');
-        sliderFrame.innerHTML = ''; // Clear the slider frame
+        sliderFrame.innerHTML = ''; // Limpia el carrusel antes de agregar las nuevas imágenes
         data.forEach((url, index) => {
             const slideDiv = document.createElement('div');
             slideDiv.className = 'slide';
