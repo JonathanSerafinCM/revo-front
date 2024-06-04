@@ -687,16 +687,27 @@ img{
     top: 50%; left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 1000;
-    font-size: 2rem; /* Adjust the font size as per your requirement */
+    font-size: 2rem; 
     text-align: center;
 }
-
+@media screen and (min-width: 1024px){
+    #infoPlatillo {
+        width: 40%; /* Ajusta este valor según tus necesidades */
+        height: 90%; /* Ajusta este valor según tus necesidades */
+    }
+}
 
 #imagenPlatillo{
     border-radius: 100%;
     width: 90%;
     height: 90%; 
    object-fit: cover;
+}
+@media screen and (min-width: 1024px){
+    #imagenPlatillo{
+        width: 80%;
+        height: 70%; 
+    }
 }
 .cb{
     background-color: #fff;
@@ -725,8 +736,8 @@ img{
     font-family: Comic Neue;
     font-size: 3rem; 
     position: absolute;
-    top: 1%; 
-    left: 1%;
+    top: 2%; 
+    left: 2%;
     padding: 20px;
     border-style: none;
     font-weight: bold;
