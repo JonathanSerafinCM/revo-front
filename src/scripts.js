@@ -140,7 +140,7 @@ function generarPlatillos(tipo, titulo, icono){
   console.log('Tipo:', tipo);
     console.log('Titulo:', titulo);
     console.log('Icono:', icono);
-  fetch('https://revolucionarios-backend.vercel.app/platillos')
+  fetch('http://localhost:3002/platillos')
     .then(response => response.json())
     .then(data => {
   let html = '';
@@ -148,14 +148,14 @@ function generarPlatillos(tipo, titulo, icono){
   const platillos = data.filter(platillo => platillo.tipo === tipo);
   platillos.forEach(platillo => {
     // Hacer una solicitud a la API para obtener la imagen
-    fetch(`https://revolucionarios-backend.vercel.app/imagen/${platillo.id_imagen}`)
+    fetch(`http://localhost:3002/imagen/${platillo.id_imagen}`)
       .then(response => response.json())
       .then(imagen => {
         html += `<div class='contenedor-menu__platillos-item'>
                    <img src='${imagen.url}' alt='platilo-${platillo.id_platillo}'/>
                    <div class='contenedor-menu__platillos-item-txt'>
                      <h3>${platillo.nombre}</h3>
-                     <h3>$${platillo.Precio}</h3>
+                     <h3>$${platillo.precio}</h3>
                    </div>
                  </div>`;
         document.getElementById('contMenu').innerHTML = html;
@@ -211,7 +211,7 @@ searchBar.addEventListener('keyup', (e) => {
   const searchString = e.target.value.toLowerCase();
 
   // Utiliza la función generarPlatillos para obtener todos los platillos
-  fetch('https://revolucionarios-backend.vercel.app/platillos')
+  fetch('http://localhost:3002/platillos')
     .then(response => response.json())
     .then(data => {
       // Filtra los platillos basándose en el valor de la búsqueda
@@ -229,7 +229,7 @@ filteredPlatillos.forEach(platillo => {
                       <img src='${imagen.url}' alt='platilo-${platillo.id}'/>
                       <div class='contenedor-menu__platillos-item-txt'>
                         <h3>${platillo.nombre}</h3>
-                        <h3>$${platillo.Precio}</h3>
+                        <h3>$${platillo.precio}</h3>
                       </div>
                     </div>`;
       document.getElementById('contMenu').innerHTML += html;
